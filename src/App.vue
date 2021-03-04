@@ -1,19 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <VTooltip>
+      <div class="example_text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </div>
+    </VTooltip>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld.vue";
+import VTooltip from "./components/Tooltip.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    HelloWorld,
+    VTooltip,
+  },
+};
 </script>
 
 <style>
@@ -21,7 +28,8 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  width: 1170px;
+  margin: 20px auto;
   color: #2c3e50;
   margin-top: 60px;
 }
